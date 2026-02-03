@@ -7,13 +7,13 @@
     <div class="container nav-container">
       <div class="logo">Tennis<span class="highlight">Pro</span></div>
       <nav>
-        <a href="/">Home</a>
-        <a href="/courts">Courts</a>
-        <a href="/lessons">Lessons</a>
-        <a href="/tournaments">Tournaments</a>
+        <a href="/">홈</a>
+        <a href="/courts">코트 예약</a>
+        <a href="/lessons">레슨</a>
+        <a href="/tournaments">대회</a>
       </nav>
       <div class="auth-buttons">
-        <button class="btn btn-primary">Book Now</button>
+        <button class="btn btn-primary">지금 예약하기</button>
       </div>
     </div>
   </header>
@@ -26,13 +26,13 @@
     <div class="container footer-content">
       <div class="footer-col">
         <h3>TennisPro</h3>
-        <p>Elevate your game with premium courts and coaching.</p>
+        <p>최고의 코트와 코칭으로 당신의 게임을 업그레이드하세요.</p>
       </div>
       <div class="footer-col">
-        <h4>Links</h4>
-        <a href="/">About Us</a>
-        <a href="/">Contact</a>
-        <a href="/">Privacy</a>
+        <h4>링크</h4>
+        <a href="/">회사 소개</a>
+        <a href="/">문의하기</a>
+        <a href="/">개인정보 처리방침</a>
       </div>
       <div class="footer-col">
         <p>&copy; 2024 TennisPro Systems. All rights reserved.</p>
@@ -48,9 +48,10 @@
     left: 0;
     width: 100%;
     z-index: 100;
-    background: rgba(15, 23, 42, 0.8);
+    background: rgba(255, 255, 255, 0.9);
     backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.02);
   }
 
   .nav-container {
@@ -63,7 +64,7 @@
   .logo {
     font-size: 1.5rem;
     font-weight: 800;
-    color: white;
+    color: var(--text-main);
   }
 
   .highlight {
@@ -91,9 +92,10 @@
   }
 
   footer {
-    background: var(--card-bg);
+    background: var(--bg-secondary);
     padding: 4rem 0;
     margin-top: 4rem;
+    border-top: 1px solid rgba(0,0,0,0.05);
   }
 
   .footer-content {
@@ -104,7 +106,7 @@
 
   .footer-col h3 {
     margin-bottom: 1rem;
-    color: white;
+    color: var(--text-main);
   }
   
   .footer-col h4 {
@@ -119,6 +121,6 @@
   }
   
   .footer-col a:hover {
-    color: white;
+    color: var(--primary);
   }
 </style>

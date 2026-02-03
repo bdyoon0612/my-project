@@ -1,15 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap');
 
 :root {
-  --primary: #ccff00;
-  --primary-hover: #b3e600;
-  --dark-bg: #0f172a;
-  --card-bg: #1e293b;
-  --text-main: #f8fafc;
-  --text-muted: #94a3b8;
+  --primary: #8bc34a;
+  /* More distinct green for light mode */
+  --primary-hover: #7cb342;
+  --bg-main: #ffffff;
+  --bg-secondary: #f8fafc;
+  --card-bg: #ffffff;
+  --text-main: #1e293b;
+  --text-muted: #64748b;
   --accent-purple: #8b5cf6;
-  --gradient-main: linear-gradient(135deg, #ccff00 0%, #00ffa3 100%);
-  --gradient-dark: linear-gradient(to bottom right, #1e293b, #0f172a);
+  --gradient-main: linear-gradient(135deg, #8bc34a 0%, #26c6da 100%);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
 * {
@@ -20,7 +24,7 @@
 
 body {
   font-family: 'Outfit', sans-serif;
-  background-color: var(--dark-bg);
+  background-color: var(--bg-main);
   color: var(--text-main);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
@@ -54,14 +58,14 @@ button {
 
 .btn-primary {
   background: var(--primary);
-  color: #000;
-  box-shadow: 0 4px 15px rgba(204, 255, 0, 0.3);
+  color: #fff;
+  box-shadow: 0 4px 15px rgba(139, 195, 74, 0.4);
 }
 
 .btn-primary:hover {
   background: var(--primary-hover);
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(204, 255, 0, 0.4);
+  box-shadow: 0 6px 20px rgba(139, 195, 74, 0.5);
 }
 
 .btn-outline {
@@ -72,7 +76,7 @@ button {
 
 .btn-outline:hover {
   background: var(--text-main);
-  color: var(--dark-bg);
+  color: #fff;
 }
 
 .section-title {

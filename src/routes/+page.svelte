@@ -233,4 +233,62 @@
     font-size: 1.25rem;
     margin-bottom: 2rem;
   }
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .hero {
+      height: auto;
+      min-height: 100vh;
+      padding-top: 100px; /* Offset for stacked nav */
+      text-align: center;
+      align-items: flex-start;
+    }
+    
+    .hero-content {
+      padding-bottom: 4rem;
+    }
+
+    h1 {
+      font-size: 3rem; /* Smaller font on mobile */
+    }
+
+    .hero p {
+      margin: 0 auto 2.5rem; /* Center align text */
+    }
+
+    .buttons {
+      justify-content: center;
+      flex-direction: column;
+      width: 100%;
+    }
+    
+    .btn {
+      width: 100%; /* Full width buttons on mobile */
+    }
+
+    .stats {
+      justify-content: space-around;
+      gap: 1rem;
+    }
+    
+    .stat-num {
+      font-size: 1.5rem;
+    }
+
+    .features {
+      padding: 4rem 0;
+    }
+
+    .card {
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .cta-card {
+      padding: 2rem;
+    }
+
+    .cta-card h2 {
+      font-size: 2rem;
+    }
+  }
 </style>

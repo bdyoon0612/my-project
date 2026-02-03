@@ -65,6 +65,7 @@
     font-size: 1.5rem;
     font-weight: 800;
     color: var(--text-main);
+    z-index: 101; /* Ensure logo is above mobile menu if we add one properly, though simple stacking is easier for now */
   }
 
   .highlight {
@@ -86,6 +87,26 @@
     color: var(--primary);
   }
 
+  /* Mobile Responsive Styles */
+  @media (max-width: 768px) {
+    .nav-container {
+      height: auto;
+      flex-direction: column;
+      padding: 1rem;
+      gap: 1rem;
+    }
+
+    nav {
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    .auth-buttons {
+      display: none; /* Hide button on very small screens to save space, or move it */
+    }
+  }
+
   main {
     padding-top: 80px;
     min-height: 100vh;
@@ -102,6 +123,14 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 3rem;
+  }
+
+  @media (max-width: 768px) {
+    .footer-content {
+      grid-template-columns: 1fr;
+      text-align: center;
+      gap: 2rem;
+    }
   }
 
   .footer-col h3 {
